@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=100vw, initial-scale=2.0">
+        <title>Meta Parking</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+    <body>
+        <div class="container">
+
+            <nav id="navbar">
+
+                <div id="logo">
+                    <a href="#home-page"><img src="./Logo.png"
+                            alt="metacube logo" id="metacubelogo"
+                            width="100px" /></a>
+                </div>
+                <div id="navtabs">
+                    <a href="#addemployee-page">Add employee</a>
+                    <a href="#addvehicle-page">Add vehicle</a>
+                    <a href="#feedback-page">Feedback</a>
+                    <a href="#pricing-page">Pricing</a>
+                </div>
+
+            </nav>
+
+            <div id="home-page">
+                <div id="home-page-content">
+                    <div id="home-page-heading">
+                        <h1 id="home-page-heading1"></h1>
+                        <h1 id="home-page-heading1">Meta </h1>
+                        <h1 id="home-page-heading2">Parking </h1>
+                    </div>
+                    <p id="home-page-text">Welcome to our Office Parking System,
+                        a modern and efficient solution tailored to meet the
+                        needs of a busy workplace. Our system is designed to
+                        make parking easy, secure, and organized for employees,
+                        visitors, and management alike.
+
+                        The entire process is supported by smart navigation
+                        tools that guide users to their designated spaces
+                        effortlessly, whether through a mobile app or on-site
+                        digital displays.
+                    </p>
+
+                </div>
+                <img src="./homepage__3_-removebg-preview.png" alt
+                    id="homepage-image">
+
+            </div>
+
+            <details open>
+                <summary>Add employee</summary>
+                <div id="addemployee-page">
+
+                    <h2>Add Employee</h2>
+
+                    <div id="addemployee-page-content">
+
+                        <img src="./Add_employee.png" alt="addemployee-image" />
+
+                        <form id="addemployee-form">
+                            <div class="input">
+                                <label for="name">Name</label>
+                                <input type="text" id="name"
+                                    placeholder="Full name" required />
+                            </div>
+                            <div class="gender">
+                                <span>Gender:</span>
+                                <br />
+                                <label for="male">Male</label>
+                                <input type="radio" id="male"
+                                    value="Male" name="gender" />
+
+                                <label for="female">Female</label>
+                                <input type="radio" id="female"
+                                    value="Female" name="gender" />
+
+                                <label for="other">Other</label>
+                                <input type="radio" id="other"
+                                    value="other" name="gender" />
+
+                            </div>
+                            <div class="input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email"
+                                    placeholder="name.title@metacube.com"
+                                    pattern=".+@metacube\.com" size="30"
+                                    required />
+                            </div>
+                            <div class="input">
+                                <label for="password">Password</label>
+                                <input type="password" id="password"
+                                    placeholder="Password" required />
+                            </div>
+                            <div class="input">
+                                <label for="confirmpassword">Confirm
+                                    Password</label>
+                                <input type="password" id="confirmpassword"
+                                    placeholder="Confirm Password"
+                                    required />
+
+                            </div>
+                            <div class="input">
+                                <label for="phoneNumber">Phone
+                                    Number</label>
+                                <input type="tel"
+                                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                    id="phonenumber"
+                                    placeholder="Phone Number" required />
+                            </div>
+                            <button type="submit">Add employee</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </details >
+
+            <details open>
+                <summary>Add vehicle</summary>
+                <div id="addvehicle-page">
+                    <h2>Add Vehicle</h2>
+                    <div id="addvehicle-page-content">
+
+                        <form id="addvehicle-form">
+                            <div class="input">
+                                <label for="vehiclemake"> Vehicle Make
+                                    (Company)</label>
+                                <input type="text" id="vehiclemake"
+                                    placeholder="Vehicle Make (Company)"
+                                    required />
+                            </div>
+                            <div class="input">
+                                <label for="vehiclemodel"> Vehicle
+                                    Model</label>
+                                <input type="text" id="vehiclemodel"
+                                    placeholder=" Vehicle Model" required />
+                            </div>
+                            <div class="typeofvehicle">
+                                <div>Type</div>
+
+                                <select name="cars" id="cars">
+                                    <option value="chose type">Type of
+                                        vehicle</option>
+                                    <option
+                                        value="twowheelers">Two-wheelers</option>
+                                    <option
+                                        value="fourwheelers:">Four-wheelers</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <label for="vehiclenumber">Vehicle
+                                    Number</label>
+                                <input type="text" id="vehiclenumber"
+                                    placeholder="Vehicle Number" required />
+                            </div>
+                            <div class="input">
+                                <label for="employeeid">Employee Id</label>
+                                <input type="text" id="employeeid"
+                                    placeholder="Employee Id" required />
+                            </div>
+                            <div class="input">
+                                <label
+                                    for="identification">Identification</label>
+                                <input type="text" id="identification"
+                                    placeholder="Color,mark,etc.."
+                                    required />
+
+                            </div>
+                            <button type="submit">Add vehicle</button>
+                        </form>
+                        <img src="./AddCar.PNG" alt="addemployee-image">
+
+                    </div>
+
+                </div>
+            </details >
+
+            <details open>
+                <summary>Feedback</summary>
+                <div id="feedback-page">
+                    <h2>Feedback</h2>
+                    <div id="feedback-page-content">
+                        <img src="./customer-feedback-animate.svg"
+                            alt="addemployee-image">
+                        <form id="feedback-form">
+                            <div class="input">
+                                <label for="name">Name</label>
+                                <input type="text" id="name"
+                                    placeholder="Name" required />
+                            </div>
+                            <div class="input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email"
+                                    placeholder="name.title@metacube.com"
+                                    pattern=".+@metacube\.com" size="30"
+                                    required />
+                            </div>
+                            <div class="input">
+                                <label>Subject</label>
+                                <textarea type="text" id="subject" rows="1"
+                                    cols="20"
+                                    placeholder="Subject"></textarea>
+                            </div>
+                            <div class="input">
+                                <label>Message</label>
+                                <textarea type id="message"
+                                    placeholder="Message..." rows="4"
+                                    cols="20"
+                                    aria-placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit">Send feedback</button>
+                        </form>
+
+                    </div>
+                </div>
+            </details >
+
+            <details open >
+                <summary>Pricing</summary>
+                <div id="pricing-page">
+                    <h2>Pricing</h2>
+
+                    <div id="pricing-page-allcards">
+
+                        <div class="cards">
+
+                            <div class="card-heading"><p>CYCLE</p></div>
+                            <div class="circle"><p
+                                    class="card-center-heading">$100</p>
+                                <p class="card-center-subheading">/month</p></div>
+                            <div class="card-price">
+                                <p>$5</p>
+                                <p>$100</p>
+                                <p>$500</p>
+                            </div>
+                            <div><button>Purchase now</button></div>
+
+                        </div>
+
+                        <div class="cards">
+                            <div class="card-heading"><p>MotorCycle</p></div>
+                            <div class="circle"><p
+                                    class="card-center-heading">$200</p>
+                                <p class="card-center-subheading">/month</p></div>
+                            <div class="card-price">
+                                <p>$10</p>
+                                <p>$200</p>
+                                <p>$1000</p>
+                            </div>
+                            <div><button>Purchase now</button></div>
+
+                        </div>
+
+                        <div class="cards">
+                            <div class="card-heading"><p>Four-wheelers</p></div>
+                            <div class="circle"><p
+                                    class="card-center-heading">$500</p>
+                                <p class="card-center-subheading">/month</p></div>
+                            <div class="card-price">
+                                <p>$20</p>
+                                <p>$500</p>
+                                <p>$35000</p>
+                            </div>
+                            <div><button>Purchase now</button></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </details>
+        
+
+        </div>
+    </body>
+
+    <footer id="footer">
+        <p>© 2025 Soumen Pal </p>
+    </footer>
+</html>
